@@ -1,6 +1,9 @@
 html {
     background-color: rgb(197, 145, 68);
 }
+*{
+    box-sizing: border-box;
+}
 body {
     width: 600px;
     margin: 0 auto;
@@ -42,3 +45,21 @@ li {
 #heading {
     color: blue;
 }
+/* @media only screen and (orientation: landscape) {
+    body{
+        background-color: rgb(255, 221, 158) ;
+        
+    }
+    
+} */
+@media only screen and (max-width: 700px) {
+   body {
+    width: 90%;
+   }    
+}
+@media only screen and (min-width: 720px) and (max-width: 1200px) {
+    body {
+     width: 90%;
+     font-size: 3vh;
+    }
+ }
