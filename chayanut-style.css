@@ -1,9 +1,12 @@
 html {
-    background-color: blanchedalmond;
+    background-color: rgb(197, 145, 68);
+}
+*{
+    box-sizing: border-box;
 }
 body {
     width: 600px;
-    margin: 10px ;
+    margin: 0 auto;
     background-color:cornsilk;
     padding: 10px 10px 10px 10px;
     border: 5px solid brown
@@ -14,13 +17,14 @@ h1 {
     text-shadow: 1px 1px 1px black;
     text-align: center;
     color: brown;
+
 }
 img {
     display: block;
     margin: 0 auto;
 }
 
-h1, p {
+p {
     margin: 0;
     padding: 20px 0;
     text-shadow: 1px 0px 0px black;
@@ -34,3 +38,28 @@ li {
     text-shadow: 0.5px 0px 0px black;
     color:darkgoldenrod
 } 
+.popular {
+    border: 4px dotted red;
+    width:90%;
+}
+#heading {
+    color: blue;
+}
+/* @media only screen and (orientation: landscape) {
+    body{
+        background-color: rgb(255, 221, 158) ;
+        
+    }
+    
+} */
+@media only screen and (max-width: 700px) {
+   body {
+    width: 90%;
+   }    
+}
+@media only screen and (min-width: 720px) and (max-width: 1200px) {
+    body {
+     width: 90%;
+     font-size: 3vh;
+    }
+ }
