@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="javascript.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        let factorArrey = [];
+        while (true) {
+            var userAnswer = Number(prompt("Enter a positive integer"));
+            if (userAnswer > 0) {
+                showPrimes(userAnswer);
+                break
+            }
+        }
+        function showPrimes(userAnswer) {
+            for (i = 2; i < userAnswer; i++) {
+                if (!isPrime(i)) continue;
+                factorArrey.push(i);
+            }
+            return factorArrey
+        }
+        function isPrime(userAnswer) {
+            for (let i = 2; i < userAnswer; i++) {
+                if (userAnswer % i == 0) return false;
+            }
+            return true;
+        }
+        alert("for n = "+ userAnswer + " prime numbers are " + factorArrey);
+    </script>
+    <script src="/littleprince415.github.io/javascript/index.js"></script>
+</head>
+<body>
+    <h2>Prime Numbers Finder!</h2>
+    <h1>Write the web app to prompt accepting for a positive integer number</h1>
+    <ul>
+        <li>If the entered text is not a positive integer number, then the web app will keep asking for a number until the valid positive integer is entered</li>
+        <li>If the entered text is a positive integer, then the web app will add into a list of prime numbers</li>
+    </ul>
+    <h1>Hint:</h1> 
+    <a>1. you may want to use loop with label</a>
+    <br>
+    <a>2. you may want to use array with push function </a>
+</body>
+</html>
